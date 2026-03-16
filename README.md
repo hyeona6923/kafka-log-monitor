@@ -145,6 +145,8 @@ kafka-log-monitor\
 ├ log-monitor (Spring Boot Backend)\
 └ log-admin (React Admin Dashboard)
 
+
+![Architecture](images/architecture.png)
 ------------------------------------------------------------------------
 
 # 실행 방법
