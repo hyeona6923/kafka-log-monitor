@@ -1,0 +1,11 @@
+{
+  "services": [
+    "payment",
+    "auth",
+    "order",
+    "inventory",
+    "loan",
+    "member",
+    "notification"
+  ]
+}

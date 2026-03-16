@@ -1,0 +1,296 @@
+body {
+  margin: 0;
+  background: #f5f7fb;
+  color: #1f2937;
+  font-family: Arial, sans-serif;
+}
+
+.dashboard-container {
+  padding: 24px;
+}
+
+.dashboard-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 24px;
+}
+
+.dashboard-title {
+  margin: 0;
+  font-size: 28px;
+  font-weight: 700;
+}
+
+.dashboard-desc {
+  margin-top: 6px;
+  color: #6b7280;
+}
+
+.dashboard-actions {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.last-updated {
+  color: #6b7280;
+  font-size: 14px;
+}
+
+.refresh-button {
+  padding: 10px 16px;
+  border: none;
+  border-radius: 10px;
+  background: #2563eb;
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.summary-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px;
+  margin-bottom: 24px;
+}
+
+.summary-card {
+  background: white;
+  border-radius: 16px;
+  padding: 20px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.06);
+}
+
+.summary-card.error {
+  border-left: 6px solid #ef4444;
+}
+
+.summary-card.warn {
+  border-left: 6px solid #f59e0b;
+}
+
+.summary-card.info {
+  border-left: 6px solid #3b82f6;
+}
+
+.summary-card.default {
+  border-left: 6px solid #9ca3af;
+}
+
+.summary-title {
+  font-size: 14px;
+  color: #6b7280;
+  margin-bottom: 8px;
+}
+
+.summary-value {
+  font-size: 30px;
+  font-weight: 700;
+}
+
+.chart-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+  margin-bottom: 24px;
+}
+
+.panel {
+  background: white;
+  border-radius: 16px;
+  padding: 20px;
+  margin-bottom: 24px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.06);
+}
+
+.panel-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.panel-title {
+  margin: 0 0 16px 0;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.panel-subtitle {
+  color: #6b7280;
+  font-size: 14px;
+}
+
+.filter-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.filter-input {
+  min-width: 180px;
+  padding: 10px 12px;
+  border: 1px solid #d1d5db;
+  border-radius: 10px;
+  background: #fff;
+}
+
+.log-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.log-table th,
+.log-table td {
+  padding: 12px;
+  border-bottom: 1px solid #e5e7eb;
+  text-align: left;
+}
+
+.log-table th {
+  background: #f9fafb;
+}
+
+.table-message {
+  text-align: center;
+  padding: 24px;
+  color: #6b7280;
+}
+
+.pagination-container {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.page-button {
+  padding: 8px 14px;
+  border: 1px solid #d1d5db;
+  border-radius: 10px;
+  background: white;
+  cursor: pointer;
+}
+
+.page-button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.page-info {
+  font-weight: 600;
+}
+
+.stats-card {
+  background: white;
+  border-radius: 16px;
+  padding: 20px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.06);
+}
+
+.error-message {
+  margin-bottom: 12px;
+  color: #ef4444;
+  font-weight: 600;
+}
+
+.stats-title {
+  font-size: 16px;
+  font-weight: 700;
+  margin-bottom: 12px;
+}
+
+.single-chart {
+  grid-template-columns: 1fr;
+}
+
+.stats-title {
+  font-size: 16px;
+  font-weight: 700;
+  margin-bottom: 12px;
+}
+.top-error-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.top-error-list li {
+  display: flex;
+  justify-content: space-between;
+  padding: 8px 0;
+  border-bottom: 1px solid #eee;
+}
+
+.rank {
+  font-weight: bold;
+  width: 20px;
+}
+
+.service {
+  flex: 1;
+  margin-left: 10px;
+}
+
+.count {
+  font-weight: bold;
+  color: #ef4444;
+}
+
+.live-log {
+  max-height: 280px;
+  overflow-y: auto;
+  background: #111827;
+  border-radius: 12px;
+  padding: 12px;
+}
+
+.live-log-empty {
+  color: #9ca3af;
+  font-family: monospace;
+}
+
+.live-log-row {
+  display: grid;
+  grid-template-columns: 90px 120px 80px 1fr;
+  gap: 10px;
+  padding: 6px 0;
+  font-family: monospace;
+  font-size: 13px;
+}
+
+
+.live-log-row:last-child {
+  border-bottom: none;
+}
+
+
+.live-log-time {
+  color: #9ca3af;
+}
+
+.live-log-service {
+  font-weight: 700;
+  color: #93c5fd;
+}
+
+.live-log-level {
+  font-weight: 700;
+}
+
+.live-log-level.INFO {
+  color: #60a5fa;
+}
+
+.live-log-level.WARN {
+  color: #f59e0b;
+}
+
+.live-log-level.ERROR {
+  color: #ef4444;
+}
+
+.live-log-message {
+  color: #f3f4f6;
+}
